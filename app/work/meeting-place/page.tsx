@@ -1,10 +1,10 @@
 'use client';
 
-import { useParams } from "next/navigation";
+
 import Navbar from "@/components/Navbar";
+import Image from "next/image"
 
 export default function ProjectDetailPage() {
-  const params = useParams();
 
   const project = {
     title: "만남의 장",
@@ -41,9 +41,11 @@ export default function ProjectDetailPage() {
 
         {/* 썸네일 이미지 */}
         <div className="col-start-3 col-span-8 mb-12">
-          <img
+          <Image
             src={project.thumbnailUrl}
             alt={project.title}
+            width={1280}
+            height={720}
             className="w-full h-auto object-cover"
           />
         </div>

@@ -31,7 +31,7 @@ export default function AboutPage() {
             <p className="text-[18px] leading-snug tracking-tight">
               We capture your precious "now"
               <br />
-              and turn it into tomorrow’s treasure.
+              and turn it into tomorrow's treasure.
             </p>
           </div>
         </section>
