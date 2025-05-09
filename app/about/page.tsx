@@ -21,7 +21,7 @@ export default function AboutPage() {
             </p>
 
             <p className="text-[18px] mt-8 leading-snug tracking-tight">
-              당신의 소중한 ‘지금’을 함께 기록하고 완성합니다.<br />
+              당신의 소중한 '지금'을 함께 기록하고 완성합니다.<br />
               Now Studio는 오늘의 이야기를 내일의 가치로 바꿉니다.
             </p>
           </div>
@@ -29,7 +29,7 @@ export default function AboutPage() {
           {/* 오른쪽 영어 */}
           <div className="col-start-7 col-span-4 flex flex-col justify-end">
             <p className="text-[18px] leading-snug tracking-tight">
-              We capture your precious “now”
+              We capture your precious "now"
               <br />
               and turn it into tomorrow’s treasure.
             </p>
@@ -46,7 +46,7 @@ export default function AboutPage() {
             {/* Mission 1 */}
             <div className="flex flex-col justify-between items-center w-1/3">
               <div className="flex justify-center items-center h-24">
-                <Image src="/about/about-1.png" alt="Mission 1" width={80} height={80} />
+                <Image src="/about/about-1.png" alt="Mission 1" width={80} height={80} unoptimized />
               </div>
               <h3 className="text-lg font-bold mt-4">Embrace the present</h3>
               <p className="text-sm text-white text-center leading-snug mt-2">
@@ -58,7 +58,7 @@ export default function AboutPage() {
             {/* Mission 2 */}
             <div className="flex flex-col justify-between items-center w-1/3">
               <div className="flex justify-center items-center h-24">
-                <Image src="/about/about-2.png" alt="Mission 2" width={80} height={80} />
+                <Image src="/about/about-2.png" alt="Mission 2" width={80} height={80} unoptimized />
               </div>
               <h3 className="text-lg font-bold mt-4">Capture fleeting moments</h3>
               <p className="text-sm text-white text-center leading-snug mt-2">
@@ -70,7 +70,7 @@ export default function AboutPage() {
             {/* Mission 3 */}
             <div className="flex flex-col justify-between items-center w-1/3">
               <div className="flex justify-center items-center h-24">
-                <Image src="/about/about-3.png" alt="Mission 3" width={80} height={80} />
+                <Image src="/about/about-3.png" alt="Mission 3" width={80} height={80} unoptimized />
               </div>
               <h3 className="text-lg font-bold mt-4">Shape dreams for tomorrow</h3>
               <p className="text-sm text-white text-center leading-snug mt-2">
@@ -90,9 +90,9 @@ export default function AboutPage() {
               Why Now Studio?
             </h2>
 
-            {/* 경험이 검증된 전문가 (왼쪽정렬) */}
+            {/* 경험이 검증된 전문가 */}
             <div className="col-start-4 col-span-6 flex items-center gap-8 mb-16">
-              <Image src="/about/why-1.png" alt="전문가" width={120} height={120} />
+              <Image src="/about/why-1.png" alt="전문가" width={120} height={120} unoptimized />
               <div className="text-left">
                 <h3 className="text-xl font-bold mb-2">경험이 검증된 전문가</h3>
                 <p className="text-[16px] leading-relaxed">
@@ -102,16 +102,14 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* 평범함을 넘어서는 접근 (오른쪽정렬) */}
+            {/* 평범함을 넘어서는 접근 */}
             <div className="col-start-4 col-span-6 flex flex-row-reverse items-center gap-8 mb-16">
-              <Image src="/about/why-2.png" alt="차별화" width={120} height={120} />
+              <Image src="/about/why-2.png" alt="차별화" width={120} height={120} unoptimized />
               <div className="text-right">
                 <h3 className="text-xl font-bold mb-2">평범함을 넘어서는 접근</h3>
                 <p className="text-[16px] leading-relaxed">
                   Now Studio는 단순한 촬영과 편집에 머물지 않습니다.<br />
-                  
                   창의적인 방향성과 차별화된 스토리텔링을 통해, 브랜드만의 독창성을 담아냅니다.
-                  
                 </p>
               </div>
             </div>
@@ -120,7 +118,7 @@ export default function AboutPage() {
             <div className="col-start-4 col-span-6 flex items-center gap-8 mb-16">
               <div className="flex items-center space-x-6">
                 {/* 아이콘 */}
-                <img src="/about/why-3.png" alt="Now Studio 아이콘" width={120} height={120} />
+                <Image src="/about/why-3.png" alt="Now Studio 아이콘" width={120} height={120} unoptimized />
 
                 {/* 텍스트 + 리스트 */}
                 <div className="flex-1">
