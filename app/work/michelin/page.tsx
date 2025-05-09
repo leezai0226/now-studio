@@ -86,10 +86,12 @@ export default function ProjectDetailPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1">
             {Array.from({ length: 9 }).map((_, index) => (
               <div key={index} className="relative w-full pt-[56.25%] overflow-hidden">
-                <img
+                <Image
                   src={`${project.captureFolder}${index + 1}.jpg`}
                   alt={`Capture ${index + 1}`}
-                  className="absolute top-0 left-0 w-full h-full object-cover"
+                  fill
+                  unoptimized
+                  className="object-cover"
                 />
               </div>
             ))}

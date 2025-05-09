@@ -1,20 +1,18 @@
-'use client';
+"use client";
 
 import Navbar from "@/components/Navbar";
-import Image from "next/image"
+import Image from "next/image"; // Image는 이제 실제로 사용됨
 
 export default function ProjectDetailPage() {
-
   const project = {
     title: "대한적십자사 경기도지사",
     brand: "대한적십자사 경기도지사",
     description: "희망나눔캠페인 수상소감 영상을 제작한 프로젝트",
     thumbnailUrl: "/thumbnails/대한적십자사경기도지사.jpg",
     videoUrls: [
-      "https://www.youtube.com/embed/KqBe90Td4Qk", 
+      "https://www.youtube.com/embed/KqBe90Td4Qk",
       "https://www.youtube.com/embed/oR2Dd3HWd0Q",
       "https://www.youtube.com/embed/i0-Mj5auWtg",
-      
     ],
   };
 
@@ -23,7 +21,6 @@ export default function ProjectDetailPage() {
       <Navbar />
 
       <div className="max-w-screen-2xl mx-auto px-6 py-10 grid grid-cols-12 gap-6">
-        
         {/* 프로젝트 메인 타이틀 */}
         <div className="col-start-4 col-span-6 mb-16">
           <h1 className="text-4xl md:text-5xl font-extrabold">
@@ -40,10 +37,13 @@ export default function ProjectDetailPage() {
 
         {/* 썸네일 이미지 */}
         <div className="col-start-3 col-span-8 mb-12">
-          <img
+          <Image
             src={project.thumbnailUrl}
             alt={project.title}
+            width={1280}
+            height={720}
             className="w-full h-auto object-cover"
+            unoptimized
           />
         </div>
 
@@ -72,7 +72,6 @@ export default function ProjectDetailPage() {
             </div>
           ))}
         </div>
-
       </div>
     </main>
   );

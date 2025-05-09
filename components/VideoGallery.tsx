@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 interface VideoGalleryProps {
   videos: string[];
@@ -19,10 +20,12 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
             className="relative w-full aspect-video cursor-pointer overflow-hidden rounded-md bg-black"
             onClick={() => setSelectedVideo(id)}
           >
-            <img
+            <Image
               src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`}
               alt={`Video ${index + 1}`}
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              fill
+              className="object-cover hover:scale-105 transition-transform duration-300"
+              unoptimized
             />
           </div>
         ))}
@@ -31,11 +34,8 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
       {/* 모달 */}
       {selectedVideo && (
         <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-6">
-          
-          {/* 모달 안에 그리드 */}
           <div className="grid grid-cols-12 w-full max-w-7xl relative">
-            
-            {/* X 버튼 (12번 컬럼 맨 끝에) */}
+            {/* X 버튼 */}
             <div className="col-span-12 flex justify-end mb-4">
               <button
                 onClick={() => setSelectedVideo(null)}
@@ -55,7 +55,6 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
                 className="absolute top-0 left-0 w-full h-full rounded-md"
               ></iframe>
             </div>
-
           </div>
         </div>
       )}

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
@@ -17,11 +17,11 @@ export default function AboutPage() {
             <h1 className="text-4xl md:text-6xl font-bold">ABOUT US</h1>
 
             <p className="text-2xl font-bold pt-12"> 
-              "Here and Now"
+              &quot;Here and Now&quot;
             </p>
 
             <p className="text-[18px] mt-8 leading-snug tracking-tight">
-              당신의 소중한 '지금'을 함께 기록하고 완성합니다.<br />
+              당신의 소중한 &apos;지금&apos;을 함께 기록하고 완성합니다.<br />
               Now Studio는 오늘의 이야기를 내일의 가치로 바꿉니다.
             </p>
           </div>
@@ -29,9 +29,9 @@ export default function AboutPage() {
           {/* 오른쪽 영어 */}
           <div className="col-start-7 col-span-4 flex flex-col justify-end">
             <p className="text-[18px] leading-snug tracking-tight">
-              We capture your precious 'now'
+              We capture your precious &apos;now&apos;
               <br />
-              and turn it into tomorrow's treasure.
+              and turn it into tomorrow&apos;s treasure.
             </p>
           </div>
         </section>
@@ -84,7 +84,7 @@ export default function AboutPage() {
         {/* WHY NOW STUDIO */}
         <section className="bg-black text-white gap-6 py-8">
           <div className="max-w-[1920px] mx-auto grid grid-cols-12 gap-6">
-            
+
             {/* 섹션 타이틀 */}
             <h2 className="col-start-4 col-span-6 text-4xl font-bold mb-8">
               Why Now Studio?
