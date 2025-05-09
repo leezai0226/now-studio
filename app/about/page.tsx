@@ -17,7 +17,7 @@ export default function AboutPage() {
             <h1 className="text-4xl md:text-6xl font-bold">ABOUT US</h1>
 
             <p className="text-2xl font-bold pt-12"> 
-              "Here and Now"
+              'Here and Now'
             </p>
 
             <p className="text-[18px] mt-8 leading-snug tracking-tight">
@@ -29,7 +29,7 @@ export default function AboutPage() {
           {/* 오른쪽 영어 */}
           <div className="col-start-7 col-span-4 flex flex-col justify-end">
             <p className="text-[18px] leading-snug tracking-tight">
-              We capture your precious "now"
+              We capture your precious 'now'
               <br />
               and turn it into tomorrow's treasure.
             </p>
