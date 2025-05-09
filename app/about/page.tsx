@@ -17,7 +17,7 @@ export default function AboutPage() {
             <h1 className="text-4xl md:text-6xl font-bold">ABOUT US</h1>
 
             <p className="text-2xl font-bold pt-12"> 
-              'Here and Now'
+              "Here and Now"
             </p>
 
             <p className="text-[18px] mt-8 leading-snug tracking-tight">

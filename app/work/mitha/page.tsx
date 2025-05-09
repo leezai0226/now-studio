@@ -1,10 +1,10 @@
 'use client';
 
-import { useParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
+import Image from "next/image"
 
 export default function ProjectDetailPage() {
-  const params = useParams();
+  
 
   const project = {
     title: "MITHA",
