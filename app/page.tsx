@@ -1,33 +1,10 @@
 'use client';
 
-import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+
 import Navbar from "@/components/Navbar";
 
-function Button({ children, className = "", ...props }: any) {
-  return (
-    <button
-      className={`bg-white text-black font-semibold py-2 px-4 rounded ${className}`}
-      {...props}
-    >
-      {children}
-    </button>
-  );
-}
-
-function Card({ children, className = "" }: any) {
-  return <div className={`rounded-lg shadow-md bg-white ${className}`}>{children}</div>;
-}
-function CardContent({ children, className = "" }: any) {
-  return <div className={className}>{children}</div>;
-}
 
 export default function Home() {
-  useEffect(() => {
-    document.title = "now studio";
-  }, []);
 
   return (
     <main className="min-h-screen bg-black text-white pt-40">
