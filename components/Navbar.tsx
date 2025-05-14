@@ -49,7 +49,7 @@ export default function Navbar() {
 
         {/* 메뉴: 6~7 컬럼 */}
         <div className="hidden md:flex col-start-6 col-span-3 justify-center items-center space-x-12 text-white text-lg font-medium">
-          <Link href="/about" className="hover:text-gray-400">About Us</Link>
+          <Link href="/about" className="hover:text-gray-400 whitespace-nowrap">About Us</Link>
           <Link href="/work" className="hover:text-gray-400">Project</Link>
           <Link href="/contact" className="hover:text-gray-400">Contact</Link>
         </div>

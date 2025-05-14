@@ -12,15 +12,15 @@ export default function WorkPage() {
       <Navbar />
 
       {/* Projects 헤더 */}
-      <section className="grid grid-cols-12 gap-6 pt-16 pb-16 items-end">
-        <div className="col-start-4 col-span-3">
+      <section className="grid grid-cols-12 gap-6 pt-16 pb-16 items-end text-center md:text-left">
+        <div className="col-span-12 md:col-start-4 md:col-span-3 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-bold">PROJECTS</h1>
-          <p className="text-[18px] mt-8 leading-snug tracking-tight">
+          <p className="text-base md:text-[18px] mt-8 leading-snug tracking-tight">
             Now Studio와 함께 협업한 브랜드 & 프로젝트들을 소개합니다
           </p>
         </div>
-        <div className="col-start-7 col-span-4 flex flex-col justify-end">
-          <p className="text-[18px] leading-snug tracking-tight">
+        <div className="col-span-12 md:col-start-7 md:col-span-4 text-center md:text-left">
+          <p className="text-base md:text-[18px] leading-snug tracking-tight">
             It’s a collaboration with Now Studio
             <br />
             Introducing brands and projects
@@ -88,11 +88,11 @@ export default function WorkPage() {
       </section>
 
       {/* 유튜브 섹션 */}
-      <section className="mt-16">
+      <section className="mt-12">
         <div className="grid grid-cols-12">
-          <div className="col-start-4 col-span-6 mb-10">
+          <div className="col-start-4 col-span-6 mb-12">
             <h2 className="text-2xl md:text-4xl font-bold mb-4">유튜브</h2>
-            <p className="mt-2 text-lg mb-4">
+            <p className="mt-2 text-lg">
               다양한 카테고리의 콘텐츠로 이제 스튜디오의 독창적인 편집 기술을 더한 영상
             </p>
           </div>
@@ -115,11 +115,11 @@ export default function WorkPage() {
       </section>
 
       {/* 병원 섹션 */}
-      <section className="mt-32">
+      <section className="mt-12">
         <div className="grid grid-cols-12">
-          <div className="col-start-4 col-span-6 mb-10">
+          <div className="col-start-4 col-span-6 mb-12">
             <h2 className="text-2xl md:text-4xl font-bold mb-4">병원</h2>
-            <p className="mt-2 text-lg mb-16">
+            <p className="mt-2 text-lg">
               병원에서 운영하는 유튜브 콘텐츠를 전문으로 작업한 콘텐츠 영상
             </p>
           </div>
@@ -136,9 +136,9 @@ export default function WorkPage() {
       </section>
 
       {/* 기업 섹션 */}
-      <section className="mt-32 mb-32">
+      <section className="mt-12 mb-32">
         <div className="grid grid-cols-12">
-          <div className="col-start-4 col-span-6 mb-10">
+          <div className="col-start-4 col-span-6 mb-12">
             <h2 className="text-3xl font-bold">기업</h2>
             <p className="mt-2 text-lg">
               기업에서 광고 형태의 영상을 의뢰하여 진행한 프로젝트
