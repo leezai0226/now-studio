@@ -50,3 +50,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="ko" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        {/* ✅ 검색 엔진 최적화 메타 */}
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Now Studio" />
+        <meta
+          name="keywords"
+          content="이제 스튜디오, 영상제작, 브랜드 영상, 유튜브 영상 제작, Now Studio"
+        />
+        {/* ✅ 구글/네이버 서치콘솔 등록 시 발급되는 인증코드 (아래 값은 예시) */}
+        <meta name="google-site-verification" content="구글코드" />
+        <meta name="naver-site-verification" content="7eb58d30ef45ec613b178946184c37a629796852" />
+      </head>
+      <body>{children}</body>
+    </html>
+  );
+}
