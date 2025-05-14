@@ -1,21 +1,37 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata } from "next";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
   subsets: ["latin"],
+  variable: "--font-geist-sans",
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
+  variable: "--font-geist-mono",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "이제 스튜디오 | Now Studio",
   description: "당신의 '지금'을 함께 완성하는 영상 스튜디오",
   icons: {
     icon: "/favicon.ico",
+  },
+  keywords: [
+    "이제 스튜디오",
+    "영상제작",
+    "브랜드 영상",
+    "유튜브 영상 제작",
+    "Now Studio",
+  ],
+  authors: [{ name: "Now Studio" }],
+  robots: "index, follow",
+  verification: {
+    google: "구글코드", // 실제 구글 코드로 바꿔 넣기
+    other: {
+      naver: "7eb58d30ef45ec613b178946184c37a629796852",
+    },
   },
   openGraph: {
     title: "이제 스튜디오 | Now Studio",
@@ -44,28 +60,6 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>
-        {children}
-      </body>
-    </html>
-  );
-}
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="ko" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <head>
-        {/* ✅ 검색 엔진 최적화 메타 */}
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Now Studio" />
-        <meta
-          name="keywords"
-          content="이제 스튜디오, 영상제작, 브랜드 영상, 유튜브 영상 제작, Now Studio"
-        />
-        {/* ✅ 구글/네이버 서치콘솔 등록 시 발급되는 인증코드 (아래 값은 예시) */}
-        <meta name="google-site-verification" content="구글코드" />
-        <meta name="naver-site-verification" content="7eb58d30ef45ec613b178946184c37a629796852" />
-      </head>
       <body>{children}</body>
     </html>
   );
