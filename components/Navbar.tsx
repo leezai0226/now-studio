@@ -51,7 +51,7 @@ export default function Navbar() {
         <div className="hidden md:flex col-start-6 col-span-3 justify-center items-center space-x-12 text-white text-lg font-medium">
           <Link href="/about" className="hover:text-gray-400 whitespace-nowrap">About Us</Link>
           <Link href="/work" className="hover:text-gray-400">Project</Link>
-          <Link href="/contact" className="hover:text-gray-400">Contact</Link>
+          <Link href="/contact" className="hover:text-gray-400 whitespace-nowrap">Contact Us</Link>
         </div>
       </div>
 
@@ -60,7 +60,7 @@ export default function Navbar() {
         <div className="md:hidden w-full bg-black bg-opacity-90 text-white text-center py-6 space-y-4">
           <Link href="/about" onClick={() => setMenuOpen(false)} className="block text-xl">About</Link>
           <Link href="/work" onClick={() => setMenuOpen(false)} className="block text-xl">Project</Link>
-          <Link href="/contact" onClick={() => setMenuOpen(false)} className="block text-xl">Contact</Link>
+          <Link href="/contact" onClick={() => setMenuOpen(false)} className="block text-xl">Contact Us</Link>
         </div>
       )}
     </header>

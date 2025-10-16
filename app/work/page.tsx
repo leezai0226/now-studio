@@ -99,6 +99,7 @@ export default function WorkPage() {
         </div>
 
         <VideoGallery videos={[
+          "DrEGhCAZM80",
           "xPmE2OM6mZk",
           "S5DEL-Qjxdc",
           "CsiiLQfQL-Q",
@@ -126,12 +127,12 @@ export default function WorkPage() {
         </div>
 
         <VideoGallery videos={[
-          "yp7Dw4RRFlY",
+          "Qwov6fVpFuA",
+          "hPhVuDqbO-8",
           "WmvuQc7vFjo",
           "b5pGyqV-0Xg",
           "E9dK7P72J0k",
           "XkeE3o4Jc2I",
-          "W1OoLLdowxo"
         ]} />
       </section>
 

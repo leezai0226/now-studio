@@ -18,7 +18,7 @@ export default function AboutPage() {
 
             <p className="text-2xl font-bold pt-12">&quot;Here and Now&quot;</p>
 
-            <p className="text-[18px] mt-8 leading-snug tracking-tight">
+            <p className="text-[17px] mt-8 leading-snug tracking-tight">
               당신의 소중한 &apos;지금&apos;을 함께 기록하고 완성합니다.<br />
               Now Studio는 오늘의 이야기를 내일의 가치로 바꿉니다.
             </p>
